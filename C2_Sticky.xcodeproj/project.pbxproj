@@ -11,7 +11,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		28DDFD9F2DAD2B76009A062F /* C2_Sticky */ = {
+		28DDFDBE2DAD2BB9009A062F /* C2_Sticky */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = C2_Sticky;
 			sourceTree = "<group>";
@@ -32,7 +32,7 @@
 		28DDFD942DAD2B76009A062F = {
 			isa = PBXGroup;
 			children = (
-				28DDFD9F2DAD2B76009A062F /* C2_Sticky */,
+				28DDFDBE2DAD2BB9009A062F /* C2_Sticky */,
 				28DDFD9E2DAD2B76009A062F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,7 +61,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				28DDFD9F2DAD2B76009A062F /* C2_Sticky */,
+				28DDFDBE2DAD2BB9009A062F /* C2_Sticky */,
 			);
 			name = C2_Sticky;
 			packageProductDependencies = (
