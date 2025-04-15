@@ -26,23 +26,25 @@ struct LoginView: View {
             
             VStack(alignment: .leading, spacing: 8) {
                 Text("이메일")
-                    .font(.body4)
+                    .font(.body5)
                     .padding(.leading, 8)
                 
                 TextField("이메일을 입력해주세요.", text: $email)
                     .focused($isFocusedEmail)
                     .padding()
+                    .font(.body5)
                     .focusedTextFieldLayout(isFocused: isFocusedEmail)
             }
             
             VStack(alignment: .leading, spacing: 8) {
                 Text("비밀번호")
-                    .font(.body4)
+                    .font(.body5)
                     .padding(.leading, 8)
                 
                 SecureField("비밀번호를 입력해주세요.", text: $password)
                     .focused($isFocusedPassword)
                     .padding()
+                    .font(.body5)
                     .focusedTextFieldLayout(isFocused: isFocusedPassword)
             }
             
@@ -51,6 +53,7 @@ struct LoginView: View {
             Button("로그인") {
                 
             }
+            .font(.h4)
             .frame(maxWidth: .infinity, maxHeight: 55)
             .foregroundStyle(.white)
             .background(Color.mainYellow)
