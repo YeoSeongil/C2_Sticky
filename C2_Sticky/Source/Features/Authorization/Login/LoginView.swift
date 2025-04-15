@@ -34,6 +34,7 @@ struct LoginView: View {
                     .padding()
                     .font(.body5)
                     .focusedTextFieldLayout(isFocused: isFocusedEmail)
+                    .keyboardType(.emailAddress)
             }
             
             VStack(alignment: .leading, spacing: 8) {
