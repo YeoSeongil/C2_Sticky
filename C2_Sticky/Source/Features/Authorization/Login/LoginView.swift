@@ -52,15 +52,17 @@ struct LoginView: View {
                 
                 Spacer()
                 
-                Button("로그인") {
-                    
+                NavigationLink {
+                    FeedView()
+                } label: {
+                    Text("로그인")
+                        .font(.h4)
+                        .frame(maxWidth: .infinity, maxHeight: 55)
+                        .foregroundStyle(.white)
+                        .background(Color.mainYellow)
+                        .clipShape(.rect(cornerRadius: 12))
                 }
-                .font(.h4)
-                .frame(maxWidth: .infinity, maxHeight: 55)
-                .foregroundStyle(.white)
-                .background(Color.mainYellow)
-                .clipShape(.rect(cornerRadius: 12))
-                
+
                 Spacer()
                 
                 VStack(spacing: 8) {
