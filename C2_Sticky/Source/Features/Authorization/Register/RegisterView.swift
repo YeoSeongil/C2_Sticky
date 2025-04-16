@@ -125,6 +125,7 @@ struct RegisterView: View {
             Spacer()
         }
         .padding(.horizontal, 16)
+        .didTapToDismissKeyboard()
         .navigationBarBackButtonHidden()
         .toolbar {
             ToolbarItem(placement: .navigationBarLeading) {

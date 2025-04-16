@@ -75,8 +75,10 @@ struct LoginView: View {
                     .font(.h4)
                 }
                 Spacer()
-            }.padding(.horizontal, 16)
-            
+            }
+            .padding(.horizontal, 16)
+            .didTapToDismissKeyboard()
+            .ignoresSafeArea()
         }
     }
 }

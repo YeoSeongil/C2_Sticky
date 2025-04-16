@@ -11,4 +11,8 @@ extension View {
     func focusedTextFieldLayout(isFocused: Bool) -> some View {
         self.modifier(RoundedFocusedTextField(isFocused: isFocused))
     }
+    
+    func didTapToDismissKeyboard() -> some View {
+        self.modifier(KeyboardDismissModifier())
+    }
 }
