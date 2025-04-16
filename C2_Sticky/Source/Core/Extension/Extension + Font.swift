@@ -17,6 +17,7 @@ extension Font {
     }
     
     static let main: Font = .custom(Pretendard.Bold.rawValue, size: 70)
+    static let logo: Font = .custom(Pretendard.Bold.rawValue, size: 24)
     
     // Title
     static let h1: Font = .custom(Pretendard.Semibold.rawValue, size: 32)
