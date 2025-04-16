@@ -9,21 +9,21 @@ import SwiftUI
 import PhotosUI
 
 struct RegisterView: View {
+    @Environment(\.dismiss) private var dismiss
+    
     @State private var nickname: String = ""
     @State private var email: String = ""
     @State private var password: String = ""
+    
+    @State private var selectedItem: PhotosPickerItem? = nil
+    @State private var selectedImage: UIImage? = nil
     
     @FocusState private var isFocusedNickname: Bool
     @FocusState private var isFocusedEmail: Bool
     @FocusState private var isFocusedPassword: Bool
     
-    @State private var selectedItem: PhotosPickerItem? = nil
-    @State private var selectedImage: UIImage? = nil
-    
     var body: some View {
         VStack(alignment: .leading) {
-            Spacer()
-            
             VStack(alignment: .leading, spacing: 8) {
                 Text("프로필을 등록해주세요.")
                     .font(.h4)
@@ -123,10 +123,23 @@ struct RegisterView: View {
             .clipShape(.rect(cornerRadius: 12))
             
             Spacer()
-        }.padding(.horizontal, 16)
+        }
+        .padding(.horizontal, 16)
+        .navigationBarBackButtonHidden()
+        .toolbar {
+            ToolbarItem(placement: .navigationBarLeading) {
+                Button {
+                    dismiss()
+                } label: {
+                    HStack {
+                        Image(systemName: "chevron.left")
+                            .foregroundStyle(Color.primary)
+                    }
+                }
+            }
+        }
     }
 }
-
 
 #Preview {
     RegisterView()
