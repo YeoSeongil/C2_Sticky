@@ -78,7 +78,6 @@ struct LoginView: View {
             }
             .padding(.horizontal, 16)
             .didTapToDismissKeyboard()
-            .ignoresSafeArea()
         }
     }
 }
